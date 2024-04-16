@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LIVE</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        /* CSS rules placed here */
+        body {
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Example: sets the font for the body */
+            background-color: rgb(36, 36, 36);
+            
+
+        }
+        h1 {
+            color: rgb(240, 240, 241); /* Example: changes the color of h1 tags */
+            text-align: center;
+            font-size: 50px; /* Aligns header text to the center */
+            background-color: rgb(255, 108, 108);
+            border-color: black;
+            margin-bottom: -10px;
+            padding-top: -20px;
+            top: 30px;
+
+        }
+        h1:hover{
+            color: rgb(45, 45, 45);
+            transition: 0.5s all;
+        }
+        .video img {
+            width: 65%; /* Ensures the image takes up 50% of its container's width */
+            display: block; /* Centers the image by default by making it a block element */
+            margin: 0 auto; /* Centers the image horizontally within its container */
+            height: 0%;
+        }
+        .video {
+            padding-top: 10px;
+            padding: 20px; /* Adds padding around the video container */
+            text-align: center; /* Aligns the contents of the video div to the center */
+        }
+        footer {
+            width: 100%;
+            background-color: #222222; /* Dark background for the footer */
+            color: rgb(72, 72, 72); /* White text color */
+            text-align: center; /* Centering the text */
+            padding: 10px; /* Some padding around the text */
+            position: fixed; /* Fixes the footer at the bottom */
+            bottom: 0;
+            left: 0;
+        }
+        .footer-content{
+            height: 40px;
+
+        }
+
+        .footer-content p {
+            margin: 0; /* Removes default margin */
+            font-size: lrem;
+            padding-top: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>FREE PARKING SLOTS</h1>
+    <div class="video">
+        <img src="{{ url_for('video') }}" alt="Live Stream">
+    </div>
+</body>
+
+<footer>
+    <div class="footer-content">
+        <p>© 2024 Coders Squad. All rights reserved.</p>
+    </div>
+</footer>
+
+</html>
+

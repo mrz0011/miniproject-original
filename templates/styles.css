@@ -1,0 +1,39 @@
+/* Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif; /* Improves font readability */
+    background-color: #f4f4f4; /* Light grey background for slight contrast */
+    color: #333; /* Dark grey color for text for better readability */
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    min-height: 100vh; /* Full viewport height */
+    margin: 0;
+}
+
+h1 {
+    color: black; /* Ensures the h1 is black */
+    text-align: center; /* Centers the heading */
+    margin-bottom: 20px; /* Adds space below the heading */
+    margin-left: 40%;
+}
+
+/* Video container styling */
+.video {
+    padding-left: 50px; /* Adds padding on the left */
+    background-color: #fff; /* White background for the video area */
+    border-radius: 8px; /* Rounds corners of the video container */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for 3D effect */
+}
+
+.video img {
+    display: block; /* Removes bottom space/margin inherent to inline elements like img */
+    max-width: 100%; /* Ensures image is never bigger than its container */
+    height: auto; /* Keeps image aspect ratio */
+}
